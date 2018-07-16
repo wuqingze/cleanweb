@@ -42,16 +42,19 @@ if(document.domain == 'www.jianshu.com'){
 }
 
 if(document.domain == 'www.baidu.com'){
-    var container = document.getElementById("container")
-    if(container != null){
-        for(var i=container.children.length-1; i>=0; i--){
-            if(container.children[i].getAttribute('id') != 'content_left'){
-                container.children[i].parentNode.removeChild(container.children[i]);
+    setTimeout(() => {
+        var container = document.getElementById("container")
+        if(container != null){
+            for(var i=container.children.length-1; i>=0; i--){
+                if(container.children[i].getAttribute('id') != 'content_left'){
+                    container.children[i].parentNode.removeChild(container.children[i]);
+                }
             }
-        }
-        document.getElementById("foot").parentNode.removeChild(document.getElementById("foot"))
-    }
+            document.getElementById("foot").parentNode.removeChild(document.getElementById("foot"))
+        }    
+    }, 100);
 }   
+
 if(document.domain == 'www.cnblogs.com'){
     var home = document.getElementById("home");
     for(var i=home.children.length-1;i>=0;i--){
