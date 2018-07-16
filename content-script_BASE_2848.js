@@ -51,42 +51,4 @@ if(document.domain == 'www.baidu.com'){
         }
         document.getElementById("foot").parentNode.removeChild(document.getElementById("foot"))
     }
-}   
-if(document.domain == 'www.cnblogs.com'){
-    var home = document.getElementById("home");
-    for(var i=home.children.length-1;i>=0;i--){
-        if(home.children[i].getAttribute('id') != 'main'){
-            home.children[i].parentNode.removeChild(home.children[i]);
-        }
-    }
-
-    var main = document.getElementById('main')
-    for(var i=main.children.length-1;i>=0;i--){
-        if(main.children[i].getAttribute('id') != 'mainContent'){
-            main.children[i].parentNode.removeChild(main.children[i]);
-        }
-    }
-
-    var post = document.getElementById('post_detail')
-    var parent = post.parentNode
-    for(var i=parent.children.length-1;i>=0;i--){
-        if(parent.children[i].getAttribute('id') != 'post_detail'){
-            parent.removeChild(parent.children[i]);
-        }
-    }
-}
-
-if (document.domain == 'juejin.im'){
-    var page = document.getElementsByClassName('view-container')[0]
-    page.children[0].setAttribute('hidden', true)
-    var main = page.children[1]
-
-    for (var i = main.children.length - 1; i >= 1; i--) {
-        main.children[i].setAttribute('hidden', true);
-    }
-
-    var content = main.children[0]
-    content.children[1].setAttribute('hidden', true)
-
-    content.children[0].setAttribute('style', 'position:absolute;left:150px')
 }

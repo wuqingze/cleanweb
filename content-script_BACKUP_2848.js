@@ -51,6 +51,7 @@ if(document.domain == 'www.baidu.com'){
         }
         document.getElementById("foot").parentNode.removeChild(document.getElementById("foot"))
     }
+<<<<<<< HEAD
 }   
 if(document.domain == 'www.cnblogs.com'){
     var home = document.getElementById("home");
@@ -74,6 +75,7 @@ if(document.domain == 'www.cnblogs.com'){
             parent.removeChild(parent.children[i]);
         }
     }
+=======
 }
 
 if (document.domain == 'juejin.im'){
@@ -89,4 +91,5 @@ if (document.domain == 'juejin.im'){
     content.children[1].setAttribute('hidden', true)
 
     content.children[0].setAttribute('style', 'position:absolute;left:150px')
+>>>>>>> refs/remotes/origin/master
 }
