@@ -52,3 +52,18 @@ if(document.domain == 'www.baidu.com'){
         document.getElementById("foot").parentNode.removeChild(document.getElementById("foot"))
     }
 }
+
+if (document.domain == 'juejin.im'){
+    var page = document.getElementsByClassName('view-container')[0]
+    page.children[0].setAttribute('hidden', true)
+    var main = page.children[1]
+
+    for (var i = main.children.length - 1; i >= 1; i--) {
+        main.children[i].setAttribute('hidden', true);
+    }
+
+    var content = main.children[0]
+    content.children[1].setAttribute('hidden', true)
+
+    content.children[0].setAttribute('style', 'position:absolute;left:150px')
+}
