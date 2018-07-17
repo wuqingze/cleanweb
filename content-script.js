@@ -1,5 +1,7 @@
 if(document.domain == 'blog.csdn.net'){
-
+    if($("#btn=readmore")!= null){
+        $('#btn-readmore').trigger("click");
+    }
     var body = document.getElementsByTagName("body")[0]
     for(var i=body.children.length-1;i>=0;i--){
         if(body.children[i].getAttribute("id") != 'mainBox'){
