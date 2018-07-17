@@ -1,7 +1,4 @@
 if(document.domain == 'blog.csdn.net'){
-    if($("#btn=readmore")!= null){
-        $('#btn-readmore').trigger("click");
-    }
     var body = document.getElementsByTagName("body")[0]
     for(var i=body.children.length-1;i>=0;i--){
         if(body.children[i].getAttribute("id") != 'mainBox'){
@@ -22,6 +19,7 @@ if(document.domain == 'blog.csdn.net'){
     }
 
     document.getElementsByTagName('main')[0].style = 'position: absolute;left: 160px;'
+    document.getElementById("btn-readmore").click()
 }
 
 if(document.domain == 'www.jianshu.com'){
