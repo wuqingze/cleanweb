@@ -93,3 +93,8 @@ if (document.domain == 'juejin.im'){
 
     content.children[0].setAttribute('style', 'position:absolute;left:150px')
 }
+if (document.domain == 'www.runoob.com'){
+    var b = document.getElementsByTagName('body')[0]
+    b.children[0].parentNode.removeChild(b.children[1])
+    b.children[0].parentNode.removeChild(b.children[0])
+}
