@@ -1,3 +1,6 @@
+//引入jQuery
+; (function (d, s) { d.body.appendChild(s = d.createElement('script')).src = 'http://code.jquery.com/jquery-1.9.1.min.js' })(document);
+
 if(document.domain == 'blog.csdn.net'){
     var body = document.getElementsByTagName("body")[0]
     for(var i=body.children.length-1;i>=0;i--){
@@ -97,4 +100,39 @@ if (document.domain == 'www.runoob.com'){
     var b = document.getElementsByTagName('body')[0]
     b.children[0].parentNode.removeChild(b.children[1])
     b.children[0].parentNode.removeChild(b.children[0])
+}
+
+if (document.domain == 'wenku.baidu.com') {
+    if ($('span.fc2e') != null) {
+        $('span.fc2e').click();
+        window.scrollTo(0, 0);
+    }
+    setTimeout(() => {
+        $(".aside").remove();
+        $("#doc #hd").remove();
+        $(".crubms-wrap").remove();
+        $(".user-bar").remove();
+        $("#doc-header").remove();
+        $(".reader-tools-bar-wrap").remove();
+        $(".fix-searchbar-wrap").remove();
+        $("#bottom-doc-list-8").remove();
+        $(".ft").remove();
+        $("#ft").remove();
+        $("#docBubble").remove();
+        $('.hd').remove();
+        $('.wk-other-new-cntent').remove();
+        $('#html-reader-go-more').remove();
+        $('.new-wm').remove();
+        $('#bottom-download').remove();
+        $('#pay-page').remove();
+        $('.banner-wrap').remove();
+        $('#next_doc_box').remove();
+        $('.high-quality-doc').remove();
+        $("body").attr("margin", "auto");
+        $('span.new-ico-wkmember-free-doc').remove();
+        $('div.share-doc.doc-character-tag').remove();
+        window.scrollTo(0, 0);
+    }, 1000);
+
+    window.scrollTo(0, 0);
 }
