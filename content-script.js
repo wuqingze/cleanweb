@@ -131,3 +131,16 @@ if (document.domain == 'wenku.baidu.com') {
 
     window.scrollTo(0, 0);
 }
+
+if (document.domain == "www.zhihu.com"){
+    if ($('div.ContentLayout-sideColumn')) $('div.ContentLayout-sideColumn').remove()
+    if ($('header.Sticky.AppHeader')) $('header.Sticky.AppHeader').remove()
+    if ($('div.TopstoryHeader')) $('div.TopstoryHeader').remove()
+    // if ($('div.QuestionHeader')) $('div.QuestionHeader').remove()
+    if ($('div.SearchSideBar')) $('div.SearchSideBar').remove()
+    if ($('div.QuestionButtonGroup')) $('div.QuestionButtonGroup').remove()
+    if ($('div.QuestionHeader-tags')) $('div.QuestionHeader-tags').remove()
+    setInterval(function () {
+        if ($('div.Question-sideColumn.Question-sideColumn--sticky')) $('div.Question-sideColumn.Question-sideColumn--sticky').remove()
+    }, 2000)
+}
