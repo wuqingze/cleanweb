@@ -3,3 +3,11 @@
 - 选择开发者模式
 - 选择==加载已解压的扩展程序==
 - 选择本项目即可
+## 适配的网站
+- blog.csdn.net
+- www.baidu.com
+- www.cnblogs.com
+- juejin.im
+- www.runoob.com
+- wenku.baidu.com
+- www.zhihu.com
